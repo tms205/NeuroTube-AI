@@ -1,318 +1,330 @@
 <div align="center">
 
-<img src="docs/screenshots/banner.png" alt="YouTube AI Agent Studio" width="100%">
+<img src="docs/screenshots/banner.png" alt="NeuroTube-AI — AI-powered YouTube content studio" width="100%">
 
-# 🎬 Ai Powered Free Automated Faceless Youtube Studio
+# 🎬 NeuroTube-AI
 
-**A fully automated, 100% free AI pipeline that researches, scripts, narrates, animates, and uploads faceless YouTube videos — from a single command.**
+### AI-Powered YouTube Content Creation Studio
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?style=flat-square&logo=google&logoColor=white)](https://aistudio.google.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Free Tier](https://img.shields.io/badge/Cost-$0%20per%20video-brightgreen?style=flat-square)](SETUP.md)
-[![Stars](https://img.shields.io/github/stars/raunakpatil/youtube-agentic-ai-studio?style=flat-square)](https://github.com/raunakpatil/youtube-agentic-ai-studio/stargazers)
+**Research ideas, generate scripts, create narration, assemble videos, review the results, and publish to YouTube — in one workflow.**
 
-[**Quick Start**](#-quick-start) · [**Features**](#-features) · [**Pipeline**](#️-how-it-works) · [**Setup Guide**](SETUP.md) · [**FAQ**](#-faq)
+A customized, community-friendly version of the open-source YouTube Agentic AI Studio, designed for creators who want to streamline faceless video and Shorts production.
+
+[![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?style=flat-square&logo=google&logoColor=white)](https://aistudio.google.com/)
+[![YouTube](https://img.shields.io/badge/YouTube-%40tms205-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@tms205)
+[![GitHub](https://img.shields.io/badge/GitHub-NeuroTube--AI-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/tms205/NeuroTube-AI)
+
+[**Features**](#-features) · [**Quick Start**](#-quick-start) · [**Workflow**](#-how-it-works) · [**Screenshots**](#-screenshots) · [**YouTube Channel**](#-youtube-channel) · [**Setup Guide**](SETUP.md)
 
 </div>
 
 ---
 
+## 🌟 About NeuroTube-AI
+
+**NeuroTube-AI** helps creators manage an end-to-end YouTube production pipeline with Google Gemini and supporting media tools. It combines AI-assisted research and scriptwriting with text-to-speech, stock images, video rendering, human review, and optional YouTube publishing.
+
+This repository is a **customized derivative** of [raunakpatil/youtube-agentic-ai-studio](https://github.com/raunakpatil/youtube-agentic-ai-studio), with changes to the interface, agents, startup workflow, and testing. See [Credits & License](#-credits--license) for attribution.
+
+> **Project status:** Personal / collaborative development. Results depend on your model access, API limits, local dependencies, and configuration. Always review AI-generated content before publishing.
+
 ## ✨ Features
 
-| Feature | Details |
+| Feature | Description |
 |---|---|
-| 🧠 **AI Research** | Gemini scans for trending topics tailored to your channel niche |
-| ✍️ **Script Writing** | Full narrated script with hook, sections, and CTA — in JSON |
-| 🎙️ **Free Voice** | Microsoft Edge TTS (no API key, no cost, word-level timing) |
-| 🖼️ **Stock Images** | Auto-downloads from Pexels with topic-aware search |
-| 🎞️ **Animated Video** | Ken Burns zoom, smooth crossfades, captions, progress bars |
-| 📱 **Shorts Support** | Generates vertical 9:16 Shorts alongside the main video |
-| 🕵️ **Human Review** | Local web dashboard to watch and approve before publishing |
-| 🚀 **Auto Upload** | Publishes to YouTube with SEO tags, description, and thumbnail |
-| 🔄 **Smart Fallback** | Select models from the API and fall back when a model hits quota |
-| 🎵 **Background Music** | Drop MP3s in `music library/` — auto-looped to fit video length |
-
----
+| 🧠 **AI topic research** | Uses Gemini to help discover and develop content ideas for a selected niche. |
+| ✍️ **Script generation** | Creates structured scripts with an opening hook, main sections, and call to action. |
+| 🎙️ **AI voiceover** | Uses Microsoft Edge TTS to produce spoken narration. |
+| 🖼️ **Stock media** | Searches and downloads relevant stock images through Pexels. |
+| 🎞️ **Video rendering** | Creates videos with image motion, transitions, captions, and optional background music. |
+| 📱 **YouTube Shorts** | Supports vertical 9:16 output alongside standard video workflows. |
+| 🖥️ **Local GUI** | Provides an interface to configure and run the workflow. |
+| 🕵️ **Review before upload** | Lets you inspect the rendered content before approving publication. |
+| 🚀 **YouTube integration** | Supports uploading approved videos using YouTube OAuth. |
+| 🔄 **Model selection & fallback** | Offers Gemini model discovery and fallback handling, subject to model availability and quota. |
+| 🧪 **Automated tests** | Includes test files for model selection, content quality, media generation, and startup checks. |
 
 ## 🖥️ Screenshots
 
-| | |
+| Main dashboard | Settings |
 |---|---|
-| ![Main GUI](docs/screenshots/gui_main.png) | ![Settings](docs/screenshots/gui_settings.png) |
-| **Main dashboard** — generate videos with one click | **Settings panel** — configure every aspect |
-| ![Review Dashboard](docs/screenshots/review_dashboard.png) | ![Banner](docs/screenshots/banner.png) |
-| **Review dashboard** — watch before you publish | **Pipeline overview** |
+| ![NeuroTube-AI main GUI](docs/screenshots/gui_main.png) | ![NeuroTube-AI settings](docs/screenshots/gui_settings.png) |
 
----
+| Review dashboard | Pipeline overview |
+|---|---|
+| ![Video review interface](docs/screenshots/review_dashboard.png) | ![Pipeline banner](docs/screenshots/banner.png) |
 
-## 🎬 Live Example — Built With This Tool
+> Screenshots are included from the project assets and may not reflect every subsequent UI change.
 
-This repo powers **[Eldritch Lore](https://www.youtube.com/@EldritchLore)** — a real YouTube channel running entirely on this pipeline.
+## 📺 YouTube Channel
 
-[![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCqDCtCHo22_6KtJ0rkDFG5g?style=for-the-badge&logo=youtube&label=Eldritch%20Lore&color=FF0000)](https://www.youtube.com/@EldritchLore)
+<div align="center">
 
-> "What if Napoleon had nukes? What if Earth was flat... and spinning?"
-> Every video on this channel was researched, scripted, narrated, and uploaded using exactly this code.
+### [▶️ @tms205 on YouTube](https://www.youtube.com/@tms205)
 
-**[→ See what this tool can actually produce](https://www.youtube.com/@TheFracturedTimelines)**
+**Visit the channel for videos and new content.**
 
----
+[![Visit YouTube Channel](https://img.shields.io/badge/Visit%20My%20YouTube%20Channel-tms205-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@tms205)
+
+</div>
+
+> Note: This is the maintainer's channel link, not a claim that every video on the channel was produced or uploaded automatically by this repository.
 
 ## ⚡ Quick Start
 
+### 1. Clone this repository
+
 ```bash
-# 1. Clone
-git clone https://github.com/raunakpatil/youtube-agentic-ai-studio.git
-cd youtube-agentic-ai-studio
+git clone https://github.com/tms205/NeuroTube-AI.git
+cd NeuroTube-AI
+```
 
-# 2. Install dependencies
-pip install -r requirements.txt
+### 2. Prepare Python and install packages
 
-# 3. Set your API keys (copy and edit .env.example)
-cp .env.example .env
-# Edit .env and add your GEMINI_API_KEY and PEXELS_API_KEY
+Python **3.13** is a suggested starting point for the current Windows setup. Other versions may work depending on your installed media dependencies.
 
-# 4. Run the GUI
+**Windows (PowerShell):**
+
+```powershell
+py -3.13 -m venv venv
+.\venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+**macOS / Linux:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+> Video rendering may also need system-level dependencies such as FFmpeg. Consult [SETUP.md](SETUP.md) and the error output for environment-specific steps.
+
+### 3. Configure credentials locally
+
+Create your own **local** `.env` file or set environment variables, according to how `config.py` loads configuration in your version. The repository does **not** provide working API keys or OAuth secrets.
+
+Example `.env` content (**replace values only on your own computer**):
+
+```dotenv
+GEMINI_API_KEY=your_gemini_api_key_here
+PEXELS_API_KEY=your_pexels_api_key_here
+# Optional, only if you use the related feature:
+ELEVENLABS_API_KEY=your_optional_elevenlabs_key_here
+```
+
+If you use `.env`, make sure your local configuration actually loads it. Alternatively, set the variables in the terminal before launching the app:
+
+```powershell
+# Windows PowerShell — values apply to this terminal session only
+$env:GEMINI_API_KEY="your_gemini_api_key_here"
+$env:PEXELS_API_KEY="your_pexels_api_key_here"
+```
+
+For YouTube uploads, create your own OAuth client in [Google Cloud Console](https://console.cloud.google.com/), save the downloaded client configuration locally as `client_secret.json` if expected by your setup, and follow [SETUP.md](SETUP.md). Do not commit the file.
+
+### 4. Start NeuroTube-AI
+
+**Windows:**
+
+```powershell
+.\run.bat
+```
+
+**Or launch the Python GUI directly:**
+
+```bash
 python gui.py
-# → Opens at http://localhost:7842
+```
 
-# — OR — run the pipeline directly from the terminal
+For a command-line workflow, the original project also provides:
+
+```bash
 python pipeline.py
 ```
 
-> **First run?** Read the full [Setup Guide](SETUP.md) — it takes about 10 minutes.
-
-**Windows / Python 3.13:** use `py -3.13 -m venv venv` for a new environment,
-then `venv\Scripts\python.exe -m pip install -r requirements.txt`.
-If your existing `venv` already works on 3.13, keep it and double-click
-`run.bat` to launch at **http://localhost:7070**. The launcher checks the
-Python version and uses that environment for both the GUI and pip.
-
----
+Open the **local address printed in the terminal** when the application starts; the port can vary with your launcher and configuration.
 
 ## 🏗️ How It Works
 
-The pipeline runs 6 sequential phases:
-
+```text
+   Topic research (Gemini)
+             │
+             ▼
+   Scriptwriting (Gemini)
+             │
+             ▼
+     Narration (Edge TTS)
+             │
+             ▼
+   Images & media (Pexels)
+             │
+             ▼
+   Video rendering + music
+             │
+             ▼
+         Human review
+             │
+       ┌─────┴─────┐
+       ▼           ▼
+  Keep locally   Approve upload
+                     │
+                     ▼
+                  YouTube
 ```
-python pipeline.py  ──►  Research  ──►  Script  ──►  Narration
-                                                          │
-              YouTube ◄── Upload ◄── Review ◄── Video ◄──┘
-```
 
-| Phase | Agent | What it does |
+| Step | Component | Responsibility |
 |---|---|---|
-| 1 · Research | `agents/researcher.py` | Gemini brainstorms trending topics for your niche and outputs a structured brief |
-| 2 · Script | `agents/scriptwriter.py` | Expands the brief into a full narrated script with image queries per section |
-| 3 · Narration | `video/narrator.py` | Edge-TTS converts the script to a cinematic MP3 voiceover |
-| 4 · Images | `video/stock.py` | Downloads high-res stock photos from Pexels, topic-aware per section |
-| 5 · Video | `video/creator.py` | Renders animated slides with Ken Burns, crossfades, captions, and music |
-| 6 · Review | `review/app.py` | Spins up a local dashboard — you watch and approve before anything is published |
-| 7 · Upload | `uploader/youtube.py` | Publishes to YouTube with full SEO metadata on your approval |
-
----
+| Research | `agents/researcher.py` | Generates topic ideas and a research brief. |
+| Script | `agents/scriptwriter.py` | Produces narration and supporting media prompts. |
+| Narration | `video/narrator.py` | Synthesizes voiceover audio. |
+| Media | `video/stock.py` | Retrieves stock imagery. |
+| Render | `video/creator.py` | Builds the video with transitions and text. |
+| Review | `review/app.py` | Supports local review before publication. |
+| Upload | `uploader/youtube.py` | Uploads approved content through YouTube integration. |
 
 ## 📁 Project Structure
 
-```
-youtube-ai-agent/
-├── 📄 pipeline.py              ← Run this to start the full pipeline
-├── 🖥️  gui.py                  ← Run this for the visual GUI
-├── ⚙️  config.py               ← All settings: keys, colors, voice, video
-├── 📦  requirements.txt
-├── 🔑  client_secret.json      ← YouTube OAuth (you add yours — see SETUP.md)
-├── 📝  .env.example            ← Copy to .env and fill in your API keys
-│
+```text
+NeuroTube-AI/
 ├── agents/
-│   ├── gemini_client.py        ← Shared AI client with discovery and fallback
-│   ├── researcher.py           ← Topic research agent
-│   └── scriptwriter.py        ← Script writing agent
-│
+│   ├── gemini_client.py       # Gemini client and model handling
+│   ├── researcher.py          # Topic research
+│   └── scriptwriter.py        # Video script generation
 ├── video/
-│   ├── narrator.py             ← Edge-TTS voiceover generator
-│   ├── stock.py                ← Pexels image downloader
-│   ├── creator.py              ← Full video renderer (Ken Burns, captions, etc.)
-│   └── music.py                ← Background music mixer
-│
-├── review/
-│   ├── app.py                  ← Flask review server
-│   └── templates/review.html  ← Review dashboard UI
-│
-├── uploader/
-│   └── youtube.py              ← YouTube Data API v3 upload
-│
-├── gui_templates/
-│   └── index.html              ← Full GUI (served by gui.py)
-│
-├── music library/              ← Drop your MP3/WAV tracks here
-│
-└── output/                     ← Auto-generated (gitignored)
-    ├── research.json
-    ├── script.json
-    ├── narration.mp3
-    ├── images/
-    └── final_video.mp4
+│   ├── narrator.py            # Voiceover generation
+│   ├── stock.py               # Stock media
+│   ├── creator.py             # Video rendering
+│   └── music.py               # Background audio
+├── review/                    # Review dashboard
+├── uploader/                  # YouTube upload workflow
+├── gui_templates/             # GUI HTML assets
+├── docs/screenshots/          # Project screenshots
+├── tests/                     # Automated tests
+├── music library/             # Optional local background music
+├── pipeline.py                # End-to-end pipeline
+├── gui.py                     # Local web GUI
+├── config.py                  # Project configuration
+├── startup_check.py           # Startup diagnostics
+├── run.bat                    # Windows launcher
+├── requirements.txt           # Python dependencies
+├── SETUP.md                   # Detailed setup notes
+└── README.md                  # This document
 ```
 
----
+**Local files excluded from Git** should include `.env`, `client_secret.json`, YouTube tokens, and generated output. Create these locally as needed, and verify your `.gitignore` before committing.
 
-## 🤖 AI Model Fallback Chain
+## 🤖 Gemini Model Selection
 
-**Settings → AI Model** loads Gemini text models from Google's API using your saved key.
-Click **Tải lại model** to refresh the list when new models become available.
-The selected model is always tried first, including models newer than the built-in defaults.
-Image, speech, Live, embedding and other specialized models are excluded from this text workflow.
+The project's model selection workflow is designed to discover compatible Gemini text models and let you pick a preferred model through the GUI. When a model is unavailable or reaches its quota, fallback logic may try another configured model.
 
-If a model hits quota (429) or is overloaded (503), the client retries up to 3 times
-then tries the built-in fallback chain. If all models fail, it reports an error.
-When model discovery is unavailable, the settings show built-in choices with a warning.
-API access, quotas and billing depend on your Google project; being listed does not guarantee quota.
+- Select a model in **Settings → AI Model** and refresh the list when needed.
+- A model appearing in the list does **not** guarantee your API key can generate content with it.
+- API pricing, quotas, availability, and Google AI Pro subscription benefits are separate considerations. Check [Google AI for Developers](https://ai.google.dev/gemini-api/docs) for current details.
+- Avoid hardcoding API keys in `config.py` or any other tracked source file.
 
-Set your preferred starting model in the GUI under **Settings → AI Model**, or in `config.py`:
+## 🔑 External Services
 
-```python
-GEMINI_MODEL = "gemini-3.8-flash"
+| Service | Purpose | Setup |
+|---|---|---|
+| [Google Gemini API](https://aistudio.google.com/) | AI research and script generation | `GEMINI_API_KEY` |
+| [Pexels API](https://www.pexels.com/api/) | Stock photos | `PEXELS_API_KEY` |
+| Microsoft Edge TTS | Voice narration | No separate API key in the original workflow |
+| [YouTube Data API](https://developers.google.com/youtube/v3) | Publish videos | Google OAuth client configuration |
+| [ElevenLabs](https://elevenlabs.io/) | Optional alternative voice workflow | `ELEVENLABS_API_KEY` if enabled |
+
+> **Cost notice:** The app is open source, but external API usage is **not guaranteed to be free**. Costs and rate limits vary by provider, model, project, and plan. Verify limits before running automated batches.
+
+## 🧪 Testing
+
+Tests in this customized project cover several workflow components. Run the relevant tests after setting up dependencies and any required test environment:
+
+```bash
+python -m pytest tests/
 ```
 
----
+> Some tests may require additional dependencies, local assets, API configuration, or mocked services. Refer to individual tests for prerequisites.
 
-## 🔑 API Keys Required (All Free)
+## 🛡️ Security & Responsible Publishing
 
-| Service | Key | Free Tier | Where to get it |
-|---|---|---|---|
-| **Google Gemini** | `GEMINI_API_KEY` | 1500 req/day | [aistudio.google.com](https://aistudio.google.com/apikey) |
-| **Pexels** | `PEXELS_API_KEY` | 200 req/hour | [pexels.com/api](https://www.pexels.com/api/) |
-| **Edge TTS** | *(none)* | Unlimited | Built-in |
-| **YouTube API** | `client_secret.json` | Free | [Google Cloud Console](https://console.cloud.google.com) |
-| **ElevenLabs** | `ELEVENLABS_API_KEY` | Optional | [elevenlabs.io](https://elevenlabs.io) |
-
-> **Total cost: $0 per video.** All required services have free tiers that comfortably cover daily video production.
-
----
-
-## 🎨 Customising Your Channel
-
-Edit `config.py` to make the output yours:
-
-```python
-# 1. Describe your channel — the more specific, the better the topics
-CHANNEL_DESCRIPTION = """
-An educational channel covering the psychology of decision-making.
-Target audience: adults 25-40 who enjoy Lex Fridman and Hidden Brain.
-"""
-CHANNEL_NAME = "Mind Mechanics"
-
-# 2. Pick your voice
-VOICE_ID = "en-GB-RyanNeural"   # British, deep, cinematic
-
-# 3. Brand colours (RGB tuples)
-COLORS = {
-    "primary":   (99, 102, 241),   # your brand colour
-    "highlight": (251, 191, 36),   # accent / titles
-    ...
-}
-
-# 4. Video style
-CROSSFADE_DURATION = 0.7   # image transition smoothness
-OVERLAY_OPACITY    = 0.62  # how dark the image overlay is
-```
-
----
+- **Never commit** `.env`, OAuth client secrets, access tokens, or API credentials.
+- **Rotate exposed credentials immediately.** Removing a key from a later commit does not erase it from earlier Git history.
+- Review and verify factual claims in AI-generated scripts before publishing.
+- Confirm the licensing and allowed use of images, audio, and any other media included in videos.
+- Follow YouTube's current policies on uploads, reused content, and disclosure of altered or synthetic media where applicable.
 
 ## ❓ FAQ
 
 <details>
-<summary><b>Does this cost anything to run?</b></summary>
+<summary><strong>Is NeuroTube-AI completely free?</strong></summary>
 
-No. The entire stack uses free tiers:
-- **Gemini** — 1500 req/day free on the 2.0-flash model
-- **Pexels** — 200 req/hour free
-- **Edge TTS** — completely free, no account needed
-- **YouTube Data API** — free for uploads
-- **Video rendering** — runs locally on your machine (CPU/GPU)
+The source code is available to use under its applicable license, but API usage, service quotas, and infrastructure may have costs. Google AI Pro is not the same as Gemini API billing.
 
 </details>
 
 <details>
-<summary><b>How long does one video take to generate?</b></summary>
+<summary><strong>Can I generate videos without uploading them?</strong></summary>
 
-On a mid-range machine (i7 + 16GB RAM):
-- Research + Script: ~30 seconds
-- Narration: ~10 seconds
-- Image downloads: ~20 seconds
-- Video render (10 min video): ~3–8 minutes depending on `RENDER_PRESET`
-- Upload: ~2–5 minutes depending on internet speed
+The workflow includes a review step so you can keep a rendered video locally instead of approving upload. Check your pipeline settings to control publishing.
 
 </details>
 
 <details>
-<summary><b>Can I use this without the YouTube upload?</b></summary>
+<summary><strong>Why did my Gemini request fail?</strong></summary>
 
-Yes. The review step lets you click "Reject" to skip the upload — the rendered MP4 will still be saved in `output/`. You can also comment out the upload step in `pipeline.py` entirely.
-
-</details>
-
-<details>
-<summary><b>Why is moviepy pinned to 1.0.3?</b></summary>
-
-MoviePy v2.0 removed the `moviepy.editor` module and changed the API. This project's renderer uses v1.0.3. For fresh installs, `requirements.txt` selects NumPy 1.x on older Python versions and NumPy 2.1+ on Python 3.13, which needs wheels supporting that Python version. Use the declared requirements instead of upgrading MoviePy separately.
+Common causes include an invalid or restricted API key, unsupported model, rate limit, depleted quota, network timeout, and project billing restrictions. Read the HTTP status and error message before changing models.
 
 </details>
 
 <details>
-<summary><b>The video renders with tiny/ugly text</b></summary>
+<summary><strong>Can my friends collaborate on this project?</strong></summary>
 
-Your system is missing the fonts the renderer looks for. Install DejaVu fonts:
-- **Ubuntu/Debian:** `sudo apt install fonts-dejavu`
-- **Mac:** `brew install --cask font-dejavu-sans-mono-nerd-font`  
-- **Windows:** fonts are already present in `C:/Windows/Fonts/`
+Yes. They can clone the repository, create their own branch, and submit a pull request. Each collaborator should configure their own local credentials, not share secrets in Git.
 
 </details>
-
-<details>
-<summary><b>YouTube upload fails with "access denied"</b></summary>
-
-Delete `youtube_token.pickle` and re-run. This forces a fresh OAuth flow. Make sure your Google account is added as a **Test User** in Google Cloud Console → OAuth consent screen.
-
-</details>
-
----
 
 ## 🗺️ Roadmap
 
-- [ ] Thumbnail generator (AI-designed cover art)
-- [ ] Scheduler (auto-post at peak times)
-- [ ] Multi-channel support
-- [ ] Custom intro/outro clips
-- [ ] Analytics dashboard
-- [ ] Voice cloning via ElevenLabs
+Ideas for future development (not a promise that these features already exist):
 
----
+- [ ] AI-assisted thumbnail generation
+- [ ] Scheduled publishing
+- [ ] Multi-channel management
+- [ ] Custom intro and outro templates
+- [ ] Content analytics dashboard
+- [ ] Expanded speech and language options
 
 ## 🤝 Contributing
 
-Pull requests are welcome! Please open an issue first to discuss major changes.
+Contributions and improvement suggestions are welcome.
 
-1. Fork the repo
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Commit: `git commit -m 'Add my feature'`
-4. Push: `git push origin feature/my-feature`
-5. Open a Pull Request
+```bash
+git clone https://github.com/tms205/NeuroTube-AI.git
+cd NeuroTube-AI
+git switch -c feature/your-feature
+# Make and test your changes
+git add .
+git commit -m "feat: describe your change"
+git push -u origin feature/your-feature
+```
 
----
+Open a Pull Request against `main`. If you do not have write access, fork the repository and push to your fork instead. Never include credentials in commits or pull requests.
 
-## 🌍 Made With This Tool
+## 🙏 Credits & License
 
-**[Eldritch Lore](https://www.youtube.com/@EldritchLore)** — science, history, and "what if" scenarios.
-Running 100% on this pipeline. Subscribe to see it in action.
+This project is based on **[YouTube Agentic AI Studio](https://github.com/raunakpatil/youtube-agentic-ai-studio)** by **[@raunakpatil](https://github.com/raunakpatil)**. NeuroTube-AI contains modifications and additions maintained by **[@tms205](https://github.com/tms205)**.
+
+Please preserve the original author's notices and the applicable terms in the repository's `LICENSE` file. See the upstream repository for original project history and attribution.
 
 ---
 
 <div align="center">
-Made with ❤️ by <a href="https://github.com/raunakpatil">@raunakpatil</a>
+
+**Built for creators, powered by AI.**
+
+[**GitHub — NeuroTube-AI**](https://github.com/tms205/NeuroTube-AI) · [**YouTube — @tms205**](https://www.youtube.com/@tms205)
+
+*Customized and maintained by [@tms205](https://github.com/tms205) · Based on work by [@raunakpatil](https://github.com/raunakpatil)*
+
 </div>
-
-
-
-[![Star on GitHub](https://img.shields.io/github/stars/raunakpatil/youtube-agentic-ai-studio?style=social)](https://github.com/raunakpatil/youtube-agentic-ai-studio)
