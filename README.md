@@ -20,15 +20,6 @@ A customized, community-friendly version of the open-source YouTube Agentic AI S
 </div>
 
 ---
-
-## 🌟 About NeuroTube-AI
-
-**NeuroTube-AI** helps creators manage an end-to-end YouTube production pipeline with Google Gemini and supporting media tools. It combines AI-assisted research and scriptwriting with text-to-speech, stock images, video rendering, human review, and optional YouTube publishing.
-
-This repository is a **customized derivative** of [raunakpatil/youtube-agentic-ai-studio](https://github.com/raunakpatil/youtube-agentic-ai-studio), with changes to the interface, agents, startup workflow, and testing. See [Credits & License](#-credits--license) for attribution.
-
-> **Project status:** Personal / collaborative development. Results depend on your model access, API limits, local dependencies, and configuration. Always review AI-generated content before publishing.
-
 ## ✨ Features
 
 | Feature | Description |
